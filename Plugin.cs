@@ -1,7 +1,8 @@
-﻿namespace Mod;
+﻿namespace EllaKillea;
 
 using BepInEx;
 using HarmonyLib;
+using EllaKillea.Classes;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
@@ -14,6 +15,8 @@ public class Plugin : BaseUnityPlugin
     {
         instance = this;
         gameObject.hideFlags = HideFlags.HideAndDontSave;
+
+        gameObject.AddComponent<LevelReplacer>();
 
         new Harmony(PluginInfo.GUID).PatchAll();
     }

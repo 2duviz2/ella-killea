@@ -1,4 +1,4 @@
-﻿namespace Mod.Helpers;
+﻿namespace EllaKillea.Helpers;
 
 using UnityEngine;
 using System.IO;
@@ -17,7 +17,7 @@ public static class BundleLoader
         string resourcePath = $"{PluginInfo.Name}.{path}";
 
         using var stream = assembly.GetManifestResourceStream(resourcePath);
-        if (stream == null) { Debug.LogError($"Bundle not found: {resourcePath}"); return; }
+        if (stream == null) { Plugin.LogError($"Bundle not found: {resourcePath}"); return; }
 
         using var ms = new MemoryStream();
         stream.CopyTo(ms);

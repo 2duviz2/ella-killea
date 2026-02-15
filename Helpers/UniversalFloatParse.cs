@@ -1,4 +1,4 @@
-﻿namespace Mod.Helpers;
+﻿namespace EllaKillea.Helpers;
 
 using System.Threading;
 

@@ -2,7 +2,7 @@
 	<Import Project="Paths.props" />
 	
 	<PropertyGroup>
-		<AssemblyName>Mod</AssemblyName>
+		<AssemblyName>EllaKillea</AssemblyName>
 		<Description>Description</Description>
 		<Version>1.0.0</Version>
 
