@@ -17,20 +17,7 @@ public class LevelReplacer : MonoBehaviour
         if (SceneHelper.CurrentScene == "Tutorial")
             ChangeLighting(new Color(0.4f, .5f, 1));
         else if (SceneHelper.CurrentScene == "Level 0-1")
-        {
-            var objs = SceneManager.GetActiveScene().GetRootGameObjects();
-            foreach (var obj in objs)
-            {
-                if (obj.name == "Clipping Message")
-                {
-                    obj.GetComponent<HudMessage>().message = "ELLA NO JURA!!1!";
-                    var oa = obj.AddComponent<ObjectActivator>();
-                    oa.events = new() { onActivate = new() };
-                    oa.events.onActivate.AddListener(() => NewMovement.Instance.GetHurt(100000, false));
-                }
-            }
             ChangeLighting(new Color(0.5f, .5f, 1));
-        }
         else if (SceneHelper.CurrentScene == "Level 0-2")
             ChangeLighting(new Color(0.6f, .5f, 1));
         else if (SceneHelper.CurrentScene == "Level 0-3")
