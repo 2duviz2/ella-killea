@@ -29,7 +29,7 @@ public class Plugin : BaseUnityPlugin
 
 public class PluginInfo
 {
-    public const string GUID = "AuthorName.ModName";
-    public const string Name = "ModName";
+    public const string GUID = "duviz.EllaKillea";
+    public const string Name = "EllaKillea";
     public const string Version = "1.0.0";
 }
